@@ -1,3 +1,4 @@
+
 *{
   padding: 0;
   margin: 0;
@@ -56,7 +57,7 @@
 } */
 .hero-section {
   position: relative;
-  background: url('images/eart.webp') no-repeat center center/cover;
+  background: url('images/-a-stunning-minimalist-digital-artwork-for-a-websi.jpg') no-repeat center center/cover;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -75,3 +76,39 @@
 .text-white {
   color: white;
 }
+
+.header-image {
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  object-fit: cover; /* Ensures consistent cropping */
+  background-color: black /* Set a common background color */
+}
+
+@media (min-width: 992px) { /* Ensures this applies to large screens */
+  .row {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .feature.col {
+      flex: 1; 
+      max-width: 30%;
+  }
+}
+.row {
+  display: flex;
+  align-items: stretch; /* Ensures all columns have the same height */
+}
+
+.feature.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the button stays at the bottom */
+  height: 100%; /* Forces equal height for all sections */
+}
+
+.feature.col a {
+  margin-top: auto; /* Pushes the "Call to action" link to the bottom */
+  align-self: flex-start; /* Aligns all buttons uniformly */
+}
+
